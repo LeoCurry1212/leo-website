@@ -1,0 +1,39 @@
+/* Apply a cool background */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff8a00, #e52e71); /* Gradient background */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style the text container */
+.background {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparent background */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Style the name text */
+h1 {
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);  /* Shadow for a cool effect */
+    animation: glow 1.5s ease-in-out infinite alternate;  /* Text glow animation */
+}
+
+/* Animation for glowing effect */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff8a00, 0 0 10px #ff8a00, 0 0 20px #ff8a00;
+    }
+    100% {
+        text-shadow: 0 0 10px #e52e71, 0 0 20px #e52e71, 0 0 30px #e52e71;
+    }
+}
